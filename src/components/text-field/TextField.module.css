@@ -1,0 +1,57 @@
+.container {
+  margin-bottom: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 48px;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 12%);
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  box-sizing: border-box;
+  min-width: 100px;
+  outline: none;
+  font-size: 16px;
+}
+
+.label {
+  z-index: 100;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-12px, 16px) scale(0.9);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  color: #858585;
+  line-height: 1;
+  left: 18px;
+  background-color: #fff;
+  padding: 0 4px;
+  height: 14px;
+}
+.input:focus {
+  border: 1px solid #3897f0;
+}
+.input:hover {
+  border: 1px solid #3897f0;
+}
+
+.filled {
+  transform: translate(-12px, -8px) scale(0.9);
+}
+
+.container:focus-within label {
+  transform: translate(-12px, -8px) scale(0.9);
+  color: #3897f0;
+}
+
+.error {
+  margin-bottom: 16px;
+  color: red;
+}
+.warningError {
+  margin-bottom: 16px;
+  color: yellow;
+}

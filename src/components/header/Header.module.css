@@ -1,0 +1,18 @@
+.header {
+  margin: 0 16px;
+  padding: 24px;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.text {
+  cursor: pointer;
+
+  & h2 {
+    margin-bottom: 0;
+  }
+}

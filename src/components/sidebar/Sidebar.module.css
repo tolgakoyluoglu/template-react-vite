@@ -1,0 +1,38 @@
+.sidebar {
+  border-radius: 0 0 8px 0;
+  width: 56px;
+  height: calc(100vh - 48px);
+  padding: 24px;
+  background-color: #fff;
+  transition: 0.3s width;
+}
+
+.sidebarOpen {
+  width: 220px;
+}
+
+.items {
+  padding: 0;
+  list-style-type: none;
+  margin-left: 14px;
+}
+
+.item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  & span {
+    margin-right: 16px;
+    font-size: 28px;
+  }
+  & h3 {
+    margin: 0;
+    display: none;
+    transition: 0.3s ease;
+  }
+  .showText {
+    display: block;
+    margin: 0;
+  }
+}
